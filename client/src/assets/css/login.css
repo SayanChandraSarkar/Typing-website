@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #e5ceff, #a2c2f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* login Container */
+.login-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* login Form */
+.login-form {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  padding: 30px;
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.login-form:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.inputs {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effect */
+}
+
+input:focus {
+  border-color: #6a11cb; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Glow effect */
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: #6a11cb; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+button:hover {
+  background-color: #2575fc;
+  transform: scale(1.05);
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #6a11cb;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.toggle-button:hover {
+  color: #2575fc; /* Change color on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
